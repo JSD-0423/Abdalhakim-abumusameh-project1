@@ -1,0 +1,48 @@
+@media (max-width: 400px) {
+  header nav h1 {
+    font-size: 0.95rem;
+  }
+
+  header .welcome span {
+    height: 1.6rem;
+  }
+
+  header .welcome .welcome-content {
+    position: relative;
+    top: 43%;
+  }
+
+  header .welcome .welcome-content h1 {
+    font-size: 1.2rem;
+  }
+  
+  header .welcome .welcome-content p {
+    font-size: 0.95rem;
+  }
+
+  /* ------------------------------- */
+  main .search {
+    flex-direction: column;
+  }
+
+  main .search .search-input {
+    width: 100%;
+    border-bottom: 1px solid var(--lines-color);
+  }
+
+  main .search .search-input input {
+    border-right: 0;
+  }
+
+  main .search .search-filters {
+    width: 100%;
+  }
+
+  main .search article {
+    padding: 0.5rem 0.8rem;
+  }
+
+  main .search article:first-child {
+    border-right: 1px solid var(--lines-color);
+  }
+}
