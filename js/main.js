@@ -2,6 +2,7 @@ const body = document.querySelector('body')
 const theme = document.querySelector('.theme')
 const darkMode = document.querySelector('.dark-mode')
 const lightMode = document.querySelector('.light-mode')
+const cardsContinaer = document.querySelector('.cards')
 
 theme.addEventListener('click', (e) => {
   body.classList.toggle('dark')

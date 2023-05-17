@@ -1,23 +1,127 @@
+@media (max-width: 1200px) {
+  main .topics .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  main .topics .cards .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .banner .banner-shapes {
+    height: 3.5rem;
+  }
+
+  .banner .banner-content p {
+    white-space: nowrap;
+  }
+
+  main .topics .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main .topics .cards .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 769px) {
+  .banner .banner-content {
+    top: 35%;
+    /* width: 80%; */
+  }
+
+  .banner .banner-shapes {
+    height: 2.5rem;
+  }
+
+  .banner .banner-content p {
+    white-space: normal;
+  }
+
+  /* ---------------------- */  
+  main .search .search-input {
+    width: 60%;
+  }
+
+  main .search .search-filters {
+    width: 40%;
+  }
+
+
+  main .topics .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .topics .cards .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner .banner-content {
+    top: 38%;
+    width: 90%;
+  }
+
+  main .search {
+    flex-direction: column;
+  }
+  
+  main .search .search-input {
+    width: 100%;
+    border-bottom: 1px solid var(--lines-color);
+  }
+
+  main .search .search-input input {
+    border-right: 0;
+  }
+
+  main .search .search-filters {
+    width: 100%;
+  }
+
+  main .search article {
+    padding: 0.5rem 0.8rem;
+  }
+
+  main .search article:first-child {
+    border-right: 1px solid var(--lines-color);
+  }
+}
+
 @media (max-width: 400px) {
   header nav h1 {
     font-size: 0.95rem;
   }
 
-  header .welcome span {
-    height: 1.6rem;
+  header .theme span, header .favorite span {
+    display: none;
   }
 
-  header .welcome .welcome-content {
+  .banner .container {
     position: relative;
-    top: 43%;
+    width: 100%;
+    height: 100%;
   }
 
-  header .welcome .welcome-content h1 {
+  .banner .banner-content {
+    position: relative;
+    top: 30%;
+  }
+
+  .banner .banner-content h2 {
     font-size: 1.2rem;
   }
   
-  header .welcome .welcome-content p {
+  .banner .banner-content p {
     font-size: 0.95rem;
+    /* white-space: pre-wrap; */
+  }
+
+  .banner .banner-shapes {
+    height: 1.6rem;
   }
 
   /* ------------------------------- */
@@ -44,5 +148,19 @@
 
   main .search article:first-child {
     border-right: 1px solid var(--lines-color);
+  }
+
+  /* ------------------------ */
+  main .topics .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main .topics .cards .card {
+    width: 100%;
+    /* grid-template-columns: repeat(5, auto); */
+  }
+
+  main .topics .cards .card img {
+    width: 100%;
   }
 }
