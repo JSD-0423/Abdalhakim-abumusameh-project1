@@ -12,6 +12,11 @@
   .drawer .cards {
     grid-template-columns: repeat(6, 1fr);
   }
+
+  /* Details Page */
+  .details-page-container {
+    padding: 0 10vw;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -35,6 +40,27 @@
 
   .drawer .cards {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* Details Page */
+  .details-page-container {
+    padding: 0 5vw;
+  }
+
+  .details {
+    height: 20rem;
+  }
+
+  .details .description {
+    margin-top: 1.2rem;
+  }
+
+  .details-info {
+    flex: 1.5;
+  }
+
+  .sub-topics {
+    width: 55%;
   }
 }
 
@@ -74,6 +100,33 @@
 
   .drawer .cards {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Details Page */
+  .details {
+    height: fit-content;
+  }
+
+  .details-card {
+    display: none;
+  }
+
+  .details .details-info .author {
+    display: block;
+  }
+  
+  .details .details-info .reaction-btn {
+    display: flex;
+  }
+
+  .sub-topics {
+    width: 100%;
+  }
+
+  .sub-topics ul li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
