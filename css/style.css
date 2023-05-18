@@ -208,6 +208,11 @@ main .topics h1 {
   margin-top: 1.55rem;
 }
 
+main .topics .cards .card a  {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* main .topics .cards .card { */
 .cards .card {
   background-color: var(--bg-default);
