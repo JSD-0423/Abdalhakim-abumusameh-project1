@@ -7,7 +7,7 @@ function createCard(cards) {
 
     article.addEventListener('click', () => {
       const cardId = card.id;
-      const detailsUrl = `../pages/details.html?id=${cardId}`
+      const detailsUrl = `/pages/details.html?id=${cardId}`
 
       window.location.href = detailsUrl;
     })
