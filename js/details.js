@@ -1,13 +1,16 @@
+console.log('hello from details page')
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get('id')
 
 const [result] = cardsData.filter(card => card.id === id)
+console.log(result)
 
 
 const detailsContainer = document.querySelector('.details-container')
 
 
 function createDetailsSection (card) {
+  console.log(card)
   const article1 = document.createElement("article");
   article1.classList.add("details-info");
 
