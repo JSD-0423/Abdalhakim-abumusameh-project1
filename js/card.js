@@ -5,6 +5,10 @@ function createCard(cards) {
     var article = document.createElement("article");
     article.className = "card";
 
+    article.onclick = (e) => {
+      window.location.href = '../pages/details.html'
+    }
+
     // Create the <img> element
     var img = document.createElement("img");
     img.src = card.image;
