@@ -26,14 +26,14 @@ header nav {
   padding: 1.19rem 0;
 }
 
-header nav h1 {
+header nav h1.main-title {
   color: var(--brand-primary);
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: -0.5px;
 }
 
-header nav h1 a {
+header nav h1.main-title a {
   text-decoration: none;
   color: inherit;
 }
@@ -194,12 +194,6 @@ main .topics {
   margin-top: 1.4rem;
 }
 
-main .topics h1 {
-  color: var(--body-text);
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-
 /* main .topics .cards { */
 .cards {
   display: grid;
@@ -282,10 +276,10 @@ main .topics .cards .card .card-info p.author {
   bottom: 0;
   left: 0;
   width: 100%;
-  max-height: 28vh;
+  max-height: 30vh;
   padding-block: 1.5rem;
   box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.3);
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 .drawer .drawer-title {
@@ -293,8 +287,15 @@ main .topics .cards .card .card-info p.author {
 }
 
 .drawer .cards {
-  grid-template-columns: repeat(8, 1fr);
-  margin-top: 1rem;
+  /* grid-template-columns: repeat(8, 1fr); */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* margin-top: 1rem; */
+}
+
+.drawer .cards .card {
+  width: 7rem;
 }
 
 .drawer .cards .card img {
